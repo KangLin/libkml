@@ -11,7 +11,7 @@ if (MINIZIP_INCLUDE_DIR)
 endif ()
 
 if (NOT MINIZIP_INCLUDE_DIR)
-    find_path(MINIZIP_INCLUDE_DIR NAMES unzip.h PATH_SUFFIXES minizip)
+    find_path(MINIZIP_INCLUDE_DIR NAMES mz.h PATH_SUFFIXES minizip)
     set(MINIZIP_INCLUDE_DIR ${MINIZIP_INCLUDE_DIR}/minizip CACHE PATH "minizip includes")
 endif ()
 
